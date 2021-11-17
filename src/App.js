@@ -21,8 +21,10 @@ const opts = {
 }
 
 // Constants
-const TWITTER_HANDLE = 'rafaolivares77';
+const TWITTER_HANDLE = '_buildspace';
 const TWITTER_LINK = `https://twitter.com/${TWITTER_HANDLE}`;
+const MY_TWITTER_HANDLE = 'rafaolivares77';
+const MY_TWITTER_LINK = `https://twitter.com/${MY_TWITTER_HANDLE}`;
 
 const App = () => {
   // State
@@ -268,15 +270,21 @@ const App = () => {
           {/* We just need to add the inverse here! */}
           {walletAddress && renderConnectedContainer()}
         </div>
-        <div className="footer-container">
+        <footer className="footer-container">
           <img alt="Twitter Logo" className="twitter-logo" src={twitterLogo} />
           <a
             className="footer-text"
             href={TWITTER_LINK}
             target="_blank"
             rel="noreferrer"
-          >{`built on @${TWITTER_HANDLE}`}</a>
-        </div>
+          >{`built on @${TWITTER_HANDLE} `}</a>
+          <a
+            className="footer-text"
+            href={MY_TWITTER_LINK}
+            target="_blank"
+            rel="noreferrer"
+          >{` by @${MY_TWITTER_HANDLE}`}</a>
+        </footer>
       </div>
     </div>
   );
