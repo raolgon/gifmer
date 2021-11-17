@@ -65,6 +65,20 @@
   margin-left: 10px;
 }
 
+.upvote-button {
+  background: -webkit-linear-gradient(left, #285a11, #61e424);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-left: 10px;
+}
+
+.downvote-button {
+  background: -webkit-linear-gradient(left, #911313, #ff0000);
+  background-size: 200% 200%;
+  animation: gradient-animation 4s ease infinite;
+  margin-left: 10px;
+}
+
 .footer-container {
   display: flex;
   justify-content: center;
@@ -102,6 +116,27 @@
   position: relative;
   justify-self: center;
   align-self: center;
+  border: 6px solid transparent;
+  border-radius: 6px;
+  padding-bottom: 10px;
+}
+
+.animated {
+  background-image:
+    linear-gradient(white, white),
+    linear-gradient(180deg, cornflowerblue, purple 50%, cornflowerblue);
+
+  background-repeat: no-repeat;
+  background-size: 100% 100%, 100% 200%;
+  background-position: 0 0, 0 100%;
+  background-origin: padding-box, border-box;
+  animation: highlight 1.5s infinite alternate;
+}
+
+@keyframes highlight {
+  100% {
+    background-position: 0 0, 0 0;
+  }
 }
 
 .gif-item img {
